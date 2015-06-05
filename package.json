@@ -4,7 +4,8 @@
   "description": "A practical Webpack & React exercise proposed by survivejs.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "start": "webpack-dev-server --config webpack.development.js --devtool eval --progress --colors --hot --content-base build"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/davidSCM/kanban_app/issues"
   },
-  "homepage": "https://github.com/davidSCM/kanban_app"
+  "homepage": "https://github.com/davidSCM/kanban_app",
+  "devDependencies": {
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.10",
+    "webpack-dev-server": "^1.9.0"
+  }
 }
